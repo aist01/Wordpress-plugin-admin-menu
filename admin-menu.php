@@ -1,16 +1,5 @@
 <?php
 
-require_once __DIR__ . '/php/menus.php';
-require_once __DIR__ . '/php/event/wpEvent.php';
-require_once __DIR__ . '/php/event/htmlEvent.php';
-require_once __DIR__ . '/php/event/registerEvent.php';
-require_once __DIR__ . '/php/idea/wpIdea.php';
-require_once __DIR__ . '/php/idea/htmlIdea.php';
-require_once __DIR__ . '/php/idea/registerIdea.php';
-// require_once __DIR__ . '/php/news/wpNews.php';
-require_once __DIR__ . '/php/news/htmlNews.php';
-// require_once __DIR__ . '/php/news/registerNews.php';
-
 /**
 * Plugin Name: Very First Plugin
 * Plugin URI: https://www.yourwebsiteurl.com/
@@ -19,6 +8,28 @@ require_once __DIR__ . '/php/news/htmlNews.php';
 * Author: Your Name Here
 * Author URI: http://yourwebsiteurl.com/
 **/
+
+require_once __DIR__ . '/php/menus.php';
+require_once __DIR__ . '/php/event/wpEvent.php';
+require_once __DIR__ . '/php/event/htmlEvent.php';
+require_once __DIR__ . '/php/event/registerEvent.php';
+require_once __DIR__ . '/php/idea/wpIdea.php';
+require_once __DIR__ . '/php/idea/htmlIdea.php';
+require_once __DIR__ . '/php/idea/registerIdea.php';
+require_once __DIR__ . '/php/news/wpNews.php';
+require_once __DIR__ . '/php/news/htmlNews.php';
+require_once __DIR__ . '/php/news/registerNews.php';
+require_once __DIR__ . '/php/philosophy/wpPhil.php';
+require_once __DIR__ . '/php/philosophy/htmlPhil.php';
+require_once __DIR__ . '/php/philosophy/registerPhil.php';
+
+function load_admin_styles() {
+
+    wp_register_style( 'admin.css', plugin_dir_url( __FILE__ ) . 'css/admin.css');
+    wp_enqueue_style( 'admin.css');
+}  
+
+
 
 
 // add_action( 'admin_menu', function(){
@@ -150,13 +161,9 @@ require_once __DIR__ . '/php/news/htmlNews.php';
 
 // add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
 
-function load_admin_styles() {
 
-    wp_register_style( 'admin.css', plugin_dir_url( __FILE__ ) . 'css/admin.css');
-    wp_enqueue_style( 'admin.css');
-}  
  
-add_action('init', 'create_event_post_type');
+
 
 // function create_event_post_type() {
 //     $labels = [

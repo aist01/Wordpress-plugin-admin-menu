@@ -1,10 +1,10 @@
 <?php
 
-function your_login_function()
+function our_login_function()
 {
     if (isset($_POST['news_new'])) {
         $post = [
-            'post_title'   => '',
+            'post_title'   => $_POST['title'],
             'post_content' => '',
             'post_status'  => 'publish',
             'post_author'  => 1, //get_current_user_id()
@@ -13,7 +13,7 @@ function your_login_function()
             'meta_input'   => [
                 'image' => $_POST['image'],
                 'date' => $_POST['date'],
-                'text' => $_POST['text']
+                'record' => $_POST['record']
             ],
         ];
         wp_insert_post($post);
@@ -27,7 +27,7 @@ function your_login_function()
         $post->meta_input = [
             'image' => $_POST['image'],
             'date' => $_POST['date'],
-            'text' => $_POST['text']
+            'record' => $_POST['record']
         ];
         wp_update_post($post);
     }
@@ -36,4 +36,4 @@ function your_login_function()
     }
 }
 
-add_action('init', 'your_login_function');
+add_action('init', 'our_login_function');

@@ -1,4 +1,3 @@
-
 <?php
 
 function your_login_function()

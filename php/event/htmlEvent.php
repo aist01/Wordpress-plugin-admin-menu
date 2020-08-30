@@ -83,4 +83,6 @@ function render_event_function()
     <br>';
 }
 
+add_action('init', 'create_event_post_type');
+
 add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
