@@ -1,12 +1,15 @@
 <?php
 
 require_once __DIR__ . '/php/menus.php';
-require_once __DIR__ . '/php/wpEvent.php';
-require_once __DIR__ . '/php/htmlEvent.php';
-require_once __DIR__ . '/php/registerEvent.php';
-require_once __DIR__ . '/php/wpIdea.php';
-require_once __DIR__ . '/php/htmlIdea.php';
-require_once __DIR__ . '/php/registerIdea.php';
+require_once __DIR__ . '/php/event/wpEvent.php';
+require_once __DIR__ . '/php/event/htmlEvent.php';
+require_once __DIR__ . '/php/event/registerEvent.php';
+require_once __DIR__ . '/php/idea/wpIdea.php';
+require_once __DIR__ . '/php/idea/htmlIdea.php';
+require_once __DIR__ . '/php/idea/registerIdea.php';
+// require_once __DIR__ . '/php/news/wpNews.php';
+require_once __DIR__ . '/php/news/htmlNews.php';
+// require_once __DIR__ . '/php/news/registerNews.php';
 
 /**
 * Plugin Name: Very First Plugin
