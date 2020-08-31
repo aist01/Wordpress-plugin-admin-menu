@@ -12,25 +12,25 @@ function render_news_function()
     ]);
 
     foreach ($posts as $post) {
-        echo '<br><br>';
-        echo 'ID: ' . $post->ID . '<br>';
-        echo 'post_type: ' . $post->post_type . '<br>';
-        echo 'post_title: ' . $post->post_title . '<br>';
-        echo 'post_name: ' . $post->post_name . '<br>';
+        // echo '<br><br>';
+        // echo 'ID: ' . $post->ID . '<br>';
+        // echo 'post_type: ' . $post->post_type . '<br>';
+        // echo 'post_title: ' . $post->post_title . '<br>';
+        // echo 'post_name: ' . $post->post_name . '<br>';
 
-        echo 'post_author: ' . $post->post_author . '<br>';
-        echo 'post_date: ' . $post->post_date . '<br>';
-        echo 'post_modified: ' . $post->post_modified . '<br>';
+        // echo 'post_author: ' . $post->post_author . '<br>';
+        // echo 'post_date: ' . $post->post_date . '<br>';
+        // echo 'post_modified: ' . $post->post_modified . '<br>';
 
-        echo 'guid: <a href="' . $post->guid . '">' . $post->guid . '</a><br>';
+        // echo 'guid: <a href="' . $post->guid . '">' . $post->guid . '</a><br>';
         
-        echo 'post_content: ' . $post->post_content . '<br><br>';
+        // echo 'post_content: ' . $post->post_content . '<br><br>';
 
-        $metas = get_post_meta($post->ID);
+        // $metas = get_post_meta($post->ID);
        
-        foreach ($metas as $meta) {
-            echo '<h3>' . $meta[0] . '</h3>';
-        }
+        // foreach ($metas as $meta) {
+        //     echo '<h3>' . $meta[0] . '</h3>';
+        // }
 
         // echo '<div class="name"> By user no.' . $post->post_author . '</div>';
         // echo '<div class="title">' . $post->post_title . '</div>';
@@ -41,7 +41,7 @@ function render_news_function()
                 <input type="hidden" name="news_update" value="update news">
                 <input type="hidden" name="news_id" value="' . $post->ID . '">
                 <div class="form-group">
-                    <label class="admin-label">Paveikslelis</label><br>
+                    <label class="admin-label">Paveikslėlis</label><br>
                     <input type="file" name="image" value="' . $metas['image'][0] . '" class="admin-input">
                 </div>
                 <div class="form-group">
@@ -92,7 +92,7 @@ function render_news_function()
                 <form class="forma" method="POST" action="" enctype="multipart/form-data">
                     <input type="hidden" name="news_new" value="new news">
                     <div class="form-group">
-                        <label class="admin-label">Paveikslelis</label><br>
+                        <label class="admin-label">Paveikslėlis</label><br>
                         <input type="file" name="image" value="image" class="admin-input">
                     </div>
                     <div class="form-group">

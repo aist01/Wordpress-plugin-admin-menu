@@ -12,25 +12,25 @@ function render_philosophy_function()
     ]);
 
     foreach ($posts as $post) {
-        echo '<br><br>';
-        echo 'ID: ' . $post->ID . '<br>';
-        echo 'post_type: ' . $post->post_type . '<br>';
-        echo 'post_title: ' . $post->post_title . '<br>';
-        echo 'post_name: ' . $post->post_name . '<br>';
+        // echo '<br><br>';
+        // echo 'ID: ' . $post->ID . '<br>';
+        // echo 'post_type: ' . $post->post_type . '<br>';
+        // echo 'post_title: ' . $post->post_title . '<br>';
+        // echo 'post_name: ' . $post->post_name . '<br>';
 
-        echo 'post_author: ' . $post->post_author . '<br>';
-        echo 'post_date: ' . $post->post_date . '<br>';
-        echo 'post_modified: ' . $post->post_modified . '<br>';
+        // echo 'post_author: ' . $post->post_author . '<br>';
+        // echo 'post_date: ' . $post->post_date . '<br>';
+        // echo 'post_modified: ' . $post->post_modified . '<br>';
 
-        echo 'guid: <a href="' . $post->guid . '">' . $post->guid . '</a><br>';
+        // echo 'guid: <a href="' . $post->guid . '">' . $post->guid . '</a><br>';
         
-        echo 'post_content: ' . $post->post_content . '<br><br>';
+        // echo 'post_content: ' . $post->post_content . '<br><br>';
 
-        $metas = get_post_meta($post->ID);
+        // $metas = get_post_meta($post->ID);
        
-        foreach ($metas as $meta) {
-            echo '<h3>' . $meta[0] . '</h3>';
-        }
+        // foreach ($metas as $meta) {
+        //     echo '<h3>' . $meta[0] . '</h3>';
+        // }
 
         // echo '<div class="name"> By user no.' . $post->post_author . '</div>';
         // echo '<div class="title">' . $post->post_title . '</div>';
