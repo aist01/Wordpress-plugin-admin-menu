@@ -34,7 +34,8 @@ function render_philosophy_function()
 
         // echo '<div class="name"> By user no.' . $post->post_author . '</div>';
         // echo '<div class="title">' . $post->post_title . '</div>';
-
+        
+        // 4 img values[1, 2, 3, 4] - kaip susitarsim
         echo '<br>
             <div class="lenteles">
             <form class="forma" method="POST" action="" enctype="multipart/form-data">
@@ -87,6 +88,7 @@ function render_philosophy_function()
         //     </form>
         // <br>';
 
+        // 4 img values[1, 2, 3, 4] - kaip susitarsim
         echo '<br>
             <div class="lenteles">
                 <form class="forma" method="POST" action="" enctype="multipart/form-data">

@@ -35,6 +35,8 @@ function render_news_function()
         // echo '<div class="name"> By user no.' . $post->post_author . '</div>';
         // echo '<div class="title">' . $post->post_title . '</div>';
 
+
+        // 1 img news_picture
         echo '<br>
             <div class="lenteles">
             <form class="forma" method="POST" action="" enctype="multipart/form-data">
@@ -87,6 +89,7 @@ function render_news_function()
         //     </form>
         // <br>';
 
+        // 1 img news_picture
         echo '<br>
             <div class="lenteles">
                 <form class="forma" method="POST" action="" enctype="multipart/form-data">
